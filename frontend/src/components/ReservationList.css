@@ -1,0 +1,93 @@
+.listcontainer {
+  animation: fadeIn 0.5s;
+}
+
+.listcontainer h2 {
+  font-size: 20px;
+  color: #1a2e4a;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.reslist {
+  display: flex;
+  flex-direction: column;
+}
+
+.rescard {
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  border-left: 3px solid purple;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+}
+
+.rescard:hover {
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+}
+
+.cardheader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cardheader h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.tag {
+  padding: 2px 7px;
+  border-radius: 12px;
+  font-size: 11px;
+}
+
+.tag-dining { background: #ddd6fe; color: purple; }
+.tag-event { background: #fce7f3; color: darkred; }
+.tag-meeting { background: #cffafe; color: darkblue; }
+.tag-wedding { background: #fee2e2; color: darkred; }
+.tag-other { background: #f3e8ff; color: purple; }
+
+.carddetails {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.detailitem {
+  flex: 1 1 40%;
+  margin-bottom: 4px;
+}
+
+.detaillabel {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.detailvalue {
+  font-size: 13px;
+  color: #333;
+}
+
+.cardfooter {
+  font-size: 11px;
+  color: #bbb;
+  border-top: 1px solid #eee;
+  padding-top: 4px;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .detailitem {
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,116 @@
+.form-container {
+  animation: fadeIn 0.4s ease;
+}
+
+.reservation-form {
+  background: #fff;
+  border-radius: 14px; 
+  padding: 32px 28px;   
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form h2 {
+  font-size: 23px;
+  color: #1a2e4a;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 19px; 
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #334155;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  padding: 9px 11px; 
+  border: 1px solid #d1d5db;
+  border-radius: 5px; 
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border: 1px solid #7c3aed;
+}
+
+.form-group input:disabled,
+.form-group select:disabled {
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px; 
+}
+
+.submit-button {
+  width: 100%;
+  padding: 11px; 
+  background-color: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 11px;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #6b21a8;
+}
+
+.submit-button:active:not(:disabled) {
+  background-color: #5b189b;
+}
+
+.submit-button:disabled {
+  opacity: 0.68; 
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+  padding: 9px 11px; 
+  border-radius: 5px;
+  margin-bottom: 17px;
+  font-size: 13px;
+}
+
+.success-message {
+  background-color: #dcfce7;
+  border: 1px solid #4ade80;
+  color: #166534;
+  padding: 9px 11px;
+  border-radius: 5px;
+  margin-bottom: 17px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .reservation-form {
+    padding: 23px 18px; 
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
