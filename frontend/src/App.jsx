@@ -15,10 +15,6 @@ function App() {
 
  return (
   <div className="app">
-   <header className="appheader">
-    <h1>Reservation System</h1>
-    <p>Book your perfect experience</p>
-   </header>
 
    <main className="appmain">
     <ReservationForm onReservationAdded={handleReservationAdded} submitted={submitted}/>

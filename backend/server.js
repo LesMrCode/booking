@@ -118,7 +118,7 @@ app.use((err, req, res, next) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`Reservation API server running on http://localhost:${PORT}`);
+  console.log(`Reservation API server running on https://booking-1-4ont.onrender.com`);
   console.log("Endpoints:");
   console.log(`  GET    /api/reservations`);
   console.log(`  GET    /api/reservations/:id`);
