@@ -4,10 +4,10 @@ import "./ReservationForm.css";
 
 function ReservationForm({ onReservationAdded, submitted }) {
   const [form, setForm] = useState({
-    name: "John Doe",
-    email: "john@example.com",
-    date: "2025-12-12",
-    time: "18:00",
+    name: "",
+    email: "",
+    date: "",
+    time: "",
     guests: "1",
     bookingType: "dining", 
   });
