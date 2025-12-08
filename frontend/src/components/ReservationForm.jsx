@@ -27,7 +27,7 @@ function ReservationForm({ onReservationAdded, submitted }) {
     setErrMsg("");
 
     try {
-      const res = await axios.post("https://booking-1-4ont.onrender.com", form);
+      const res = await axios.post("https://booking-1-4ont.onrender.com/api/reservations", form);
       onReservationAdded(res.data);
 
       // reset form manually

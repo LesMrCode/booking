@@ -11,12 +11,12 @@ function ReservationList({ reservations }) {
   }
 
   return (
-    <div className="list-container">
+    <div className="listcontainer">
       <h2>Recent Reservations</h2>
-      <div className="reservations-list">
+      <div className="reservationslist">
         {reservations.map((reservation, index) => (
-          <div key={reservation.id || index} className="reservation-card">
-            <div className="card-header">
+          <div key={reservation.id || index} className="reservationcard">
+            <div className="cardheader">
               <h3>{reservation.name}</h3>
               <span className={`badge badge-${reservation.bookingType}`}>{reservation.bookingType}</span>
             </div>

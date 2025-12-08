@@ -9,12 +9,12 @@
   font-weight: bold;
 }
 
-.reslist {
+.reservationlist {
   display: flex;
   flex-direction: column;
 }
 
-.rescard {
+.reservationcard {
   background: white;
   border-radius: 8px;
   padding: 12px;
@@ -22,7 +22,7 @@
   box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
 }
 
-.rescard:hover {
+.reservationcard:hover {
   box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
 }
 
@@ -56,23 +56,23 @@
   margin-bottom: 8px;
 }
 
-.detailitem {
+.detail-item {
   flex: 1 1 40%;
   margin-bottom: 4px;
 }
 
-.detaillabel {
+.detail-label {
   font-size: 11px;
   color: #888;
   margin-bottom: 2px;
 }
 
-.detailvalue {
+.detail-value {
   font-size: 13px;
   color: #333;
 }
 
-.cardfooter {
+.card-footer {
   font-size: 11px;
   color: #bbb;
   border-top: 1px solid #eee;
