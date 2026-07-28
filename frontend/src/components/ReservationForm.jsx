@@ -54,12 +54,13 @@ function ReservationForm({ onReservationAdded, submitted }) {
     <div className="form-container">
       <form onSubmit={submitForm} className="reservation-form">
         <h2>Create a Reservation</h2>
+        <p className="form-subtitle">Book your table in seconds.</p>
 
         {errMsg && <div className="error-message">{errMsg}</div>}
         {submitted && <div className="success-message">Reservation created!</div>}
 
         <div className="form-group">
-          <label htmlFor="name">Full Name *</label>
+          <label htmlFor="name">Full Name <span className="req">*</span></label>
           <input
             type="text"
             id="name"
@@ -73,7 +74,7 @@ function ReservationForm({ onReservationAdded, submitted }) {
         </div>
 
         <div className="form-group">
-          <label htmlFor="email">Email *</label>
+          <label htmlFor="email">Email <span className="req">*</span></label>
           <input
             type="email"
             id="email"
@@ -88,7 +89,7 @@ function ReservationForm({ onReservationAdded, submitted }) {
 
         <div className="form-row">
           <div className="form-group">
-            <label htmlFor="date">Date *</label>
+            <label htmlFor="date">Date <span className="req">*</span></label>
             <input
               type="date"
               id="date"
@@ -101,7 +102,7 @@ function ReservationForm({ onReservationAdded, submitted }) {
           </div>
 
           <div className="form-group">
-            <label htmlFor="time">Time *</label>
+            <label htmlFor="time">Time <span className="req">*</span></label>
             <input
               type="time"
               id="time"
@@ -116,7 +117,7 @@ function ReservationForm({ onReservationAdded, submitted }) {
 
         <div className="form-row">
           <div className="form-group">
-            <label htmlFor="guests">Guests *</label>
+            <label htmlFor="guests">Guests <span className="req">*</span></label>
             <select
               id="guests"
               name="guests"
@@ -133,7 +134,7 @@ function ReservationForm({ onReservationAdded, submitted }) {
           </div>
 
           <div className="form-group">
-            <label htmlFor="bookingType">Booking Type *</label>
+            <label htmlFor="bookingType">Booking Type <span className="req">*</span></label>
             <select
               id="bookingType"
               name="bookingType"
