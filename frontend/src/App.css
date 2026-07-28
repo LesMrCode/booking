@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+.app {
+  min-height: 100vh;
+  background: oklch(0.97 0.003 264);
+}
+
+.appmain {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  padding: 48px 24px;
+  box-sizing: border-box;
+}

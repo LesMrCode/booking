@@ -1,93 +1,110 @@
 .listcontainer {
+  width: 100%;
+  max-width: 520px;
   animation: fadeIn 0.5s;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .listcontainer h2 {
-  font-size: 20px;
-  color: #1a2e4a;
-  margin-bottom: 15px;
-  font-weight: bold;
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: oklch(0.22 0.01 264);
+  letter-spacing: -0.005em;
 }
 
-.reservationlist {
+.reservationslist {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .reservationcard {
-  background: white;
-  border-radius: 8px;
-  padding: 12px;
-  border-left: 3px solid purple;
-  box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
-}
-
-.reservationcard:hover {
-  box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+  background: oklch(0.995 0 0);
+  border: 1px solid oklch(0.91 0.004 264);
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 1px 2px oklch(0 0 0 / 0.03);
 }
 
 .cardheader {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-  border-bottom: 1px solid #ccc;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
-.cardheader h3 {
-  font-size: 15px;
-  margin: 0;
-}
-
-.tag {
-  padding: 2px 7px;
-  border-radius: 12px;
-  font-size: 11px;
-}
-
-.tag-dining { background: #ddd6fe; color: purple; }
-.tag-event { background: #fce7f3; color: darkred; }
-.tag-meeting { background: #cffafe; color: darkblue; }
-.tag-wedding { background: #fee2e2; color: darkred; }
-.tag-other { background: #f3e8ff; color: purple; }
-
-.carddetails {
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: oklch(0.93 0.02 264);
+  color: oklch(0.4 0.08 264);
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 8px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  flex-shrink: 0;
 }
 
-.detail-item {
-  flex: 1 1 40%;
-  margin-bottom: 4px;
+.cardidentity {
+  flex: 1;
+  min-width: 0;
+}
+
+.cardname {
+  font-size: 15px;
+  font-weight: 600;
+  color: oklch(0.22 0.01 264);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardemail {
+  font-size: 13px;
+  color: oklch(0.55 0.01 264);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.typebadge {
+  font-size: 12px;
+  font-weight: 600;
+  color: oklch(0.4 0.08 264);
+  background: oklch(0.93 0.02 264);
+  padding: 5px 11px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.card-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid oklch(0.94 0.003 264);
 }
 
 .detail-label {
+  display: block;
   font-size: 11px;
-  color: #888;
-  margin-bottom: 2px;
+  color: oklch(0.6 0.005 264);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 3px;
 }
 
 .detail-value {
-  font-size: 13px;
-  color: #333;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: oklch(0.28 0.01 264);
 }
-
-.card-footer {
-  font-size: 11px;
-  color: #bbb;
-  border-top: 1px solid #eee;
-  padding-top: 4px;
-}
-
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
-}
-
-/* responsive */
-@media (max-width: 768px) {
-  .detailitem {
-    flex: 1 1 100%;
-  }
 }

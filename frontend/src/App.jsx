@@ -8,7 +8,7 @@ function App() {
  const [submitted, setSubmitted] = useState(false)
 
  const handleReservationAdded = (newRes) => {
-   setReservations([...reservations, newRes])
+   setReservations([newRes, ...reservations])
    setSubmitted(true)
    setTimeout(()=> setSubmitted(false), 4000)
  }
